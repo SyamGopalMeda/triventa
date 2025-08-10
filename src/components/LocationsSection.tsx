@@ -9,7 +9,7 @@ const locations = [
     id: 1,
     address: "#401, Maruti Grandeurs, Banjara Hills, Hyderabad 500034",
     city: "Hyderabad",
-    type: "Corporate Office",
+    type: "Business Center",
     coordinates: { lat: 17.4126, lng: 78.4392 }, // Real coordinates for Banjara Hills, Hyderabad
     phone: "+91 8367228888",
     email: "ceo@triventagroup.com"
@@ -18,14 +18,14 @@ const locations = [
     id: 2,
     address: "#408, Aparna Green, Financial District, Hyderabad 500032",
     city: "Hyderabad",
-    type: "Business Center",
+    type: "Corporate Office",
     coordinates: { lat: 17.4239, lng: 78.3957 }, // Real coordinates for Financial District, Hyderabad
     phone: "+91 8367228888",
     email: "business@triventagroup.com"
   },
   {
     id: 3,
-    address: "D.No. 3654/1, Kolanukonda Road, Undavalli, Amaravati 522501",
+    address: "D.No. 365/1, Kolanukonda Road, Undavalli, Amaravati 522501",
     city: "Amaravati",
     type: "Regional Office",
     coordinates: { lat: 16.5193, lng: 80.5932 }, // Real coordinates for Undavalli, Amaravati
