@@ -65,10 +65,10 @@ const verticals = [
   {
     id: 7,
     title: "9 TV Studio Telugu",
-    description: "Premier Telugu entertainment and news broadcasting",
+    description: "Leading Telugu digital media platform bringing engaging entertainment and the latest updates directly to your screens via YouTube and live streaming.",
     icon: Tv,
     image: tvImg,
-    offerings: ["Television Production", "News Broadcasting", "Entertainment Content", "Live Streaming"]
+    offerings: ["YouTube", "Entertainment Content", "Live Streaming", "Interactive Digital Shows"]
   },
   {
     id: 8,
