@@ -2,11 +2,12 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import { ShoppingBag, Star, ArrowRight, Sparkles } from 'lucide-react';
 
-// Import product images
+// Placeholder product images (replace with actual images in your project)
 import gheeImage from '../assets/E commerce images/Triventa Ghee.jpeg';
 import meethaKartImage from '../assets/E commerce images/Triventa Meetha Kart.jpeg';
 import picklesImage from '../assets/E commerce images/Triventa Non Veg Pickles.jpeg';
 import seafoodImage from '../assets/E commerce images/Triventa Seafood cuts.jpeg';
+import birfiImage from '../assets/E commerce images/Triventa Birfi.jpeg';
 
 interface Product {
     id: number;
@@ -45,6 +46,14 @@ export const EcommerceSection: React.FC = () => {
         },
         {
             id: 3,
+            name: "Triventa Birfi",
+            image: birfiImage,
+            category: "Premium Sweets",
+            description: "Authentic birfi with traditional taste and premium quality",
+            gradient: "from-amber-400 via-yellow-500 to-orange-500"
+        },
+        {
+            id: 4,
             name: "Triventa Non-Veg Pickles",
             image: picklesImage,
             category: "Gourmet Pickles",
@@ -52,7 +61,7 @@ export const EcommerceSection: React.FC = () => {
             gradient: "from-green-400 via-emerald-500 to-teal-600"
         },
         {
-            id: 4,
+            id: 5,
             name: "Triventa Seafood Cuts",
             image: seafoodImage,
             category: "Premium Seafood",
@@ -199,7 +208,7 @@ export const EcommerceSection: React.FC = () => {
                                 transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
                                 className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl mx-auto"
                             >
-                                {/* Product Image - FIXED */}
+                                {/* Product Image */}
                                 <motion.div
                                     whileHover={{ scale: 1.05, rotateY: 5 }}
                                     className="relative lg:w-1/2"
@@ -277,13 +286,13 @@ export const EcommerceSection: React.FC = () => {
                         </AnimatePresence>
                     </div>
 
-                    {/* Product Grid Navigation - FIXED */}
+                    {/* Product Grid Navigation */}
                     <motion.div
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
                         variants={containerVariants}
-                        className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto"
+                        className="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-5xl mx-auto"
                     >
                         {products.map((product, index) => (
                             <motion.div
@@ -300,10 +309,10 @@ export const EcommerceSection: React.FC = () => {
                                     <motion.img
                                         src={product.image}
                                         alt={product.name}
-                                        className="w-full h-24 object-contain bg-white/5 rounded-xl mb-3"
+                                        className="w-full h-20 object-contain bg-white/5 rounded-xl mb-3"
                                         whileHover={{ scale: 1.02 }}
                                     />
-                                    <h4 className="text-white font-semibold text-sm text-center leading-tight">
+                                    <h4 className="text-white font-semibold text-xs text-center leading-tight">
                                         {product.name.replace('Triventa ', '')}
                                     </h4>
                                 </div>
