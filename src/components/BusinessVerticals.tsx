@@ -68,7 +68,7 @@ const verticals = [
     description: "Leading Telugu digital media platform bringing engaging entertainment and the latest updates directly to your screens via YouTube and live streaming.",
     icon: Tv,
     image: tvImg,
-    offerings: ["YouTube", "Entertainment Content", "Live Streaming", "Interactive Digital Shows"]
+    offerings: ["YouTube", "Entertainment Content", "Interactive Digital Shows"]
   },
   {
     id: 8,
