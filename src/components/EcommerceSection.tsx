@@ -46,9 +46,9 @@ export const EcommerceSection: React.FC = () => {
         },
         {
             id: 3,
-            name: "Triventa Birfi",
+            name: "Birfi",
             image: birfiImage,
-            category: "Premium Sweets",
+            category: "Food Delivery app",
             description: "Authentic birfi with traditional taste and premium quality",
             gradient: "from-amber-400 via-yellow-500 to-orange-500"
         },
